@@ -1,0 +1,15 @@
+<%= form_for email do |f| %>
+  <div class="input">
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name, placeholder: "Name", required: true %>
+  </div>
+
+  <div class="input">
+    <%= f.label :email %>
+    <%= f.email_field :email, placeholder: "Email", required: true %>
+  </div>
+
+  <div class="submit">
+    <%= f.submit "Sign up and code more" %>
+  </div>
+<% end %>

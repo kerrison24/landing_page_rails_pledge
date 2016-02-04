@@ -1,0 +1,51 @@
+<% if current_admin %>
+  <span class="log-out"><%= link_to "Log out", destroy_admin_session_path, method: :delete %></span>
+<% end %>
+
+<div class="header">
+  <h1>Rails Pledge</h1>
+  <div class="sub-title">
+    <p>
+      A community for Ruby on Rails developers to help you complete your projects by using public accountability.
+    </p>
+    <p class="launch">
+      Launching 16th February, 2016!
+    </p>
+  </div>
+</div>
+
+<div class="main">
+  <p class="question">How many times have you started and never finished your Rails projects?</p>
+  <p>
+    The aim of this community is to help and support each other to complete
+    their projects and finally launch that web app you've been working on for ages.
+  </p>
+  <p class="question">How does it work?</p>
+  <ol>
+    <li>Create a thread by setting a goal and a deadline</li>
+    <li>Post updates and progress</li>
+    <li>Once the deadline has been met or your goal has been achieved, post a final update sharing what you've learnt</li>
+  </ol>
+</div>
+
+<div class="form-area">
+  <div class="left">
+    <p>If one of your goals are to:</p>
+    <ul>
+      <li>Build more web applications</li>
+      <li>Develop your portfolio</li>
+      <li>Improve as a Rails developer</li>
+      <br>
+    </ul>
+  </div>
+  <div class="right">
+    <p class="join">Join the community!</p>
+    <%= render partial: "emails/form", locals: { email: @email } %>
+  </div>
+</div>
+
+<div class="made">
+  <p>
+    Made by <a href="http://twitter.com/kerritaco", target="blank">@kerritaco</a>
+  </p>
+</div>

@@ -1,0 +1,172 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+html {
+  background-color: #fafafa;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+p, li {
+  color: #787878;
+  font-size: 19px;
+}
+
+.made {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header {
+  margin-top: 30px;
+  h1 {
+    text-align: center;
+    color: #981a21;
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .sub-title {
+    margin-top: 0;
+    border-bottom: 2px solid #981a21;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    width: 959px;
+    margin: 0 auto;
+    p {
+      margin: 0;
+    }
+    .launch {
+      text-align: center;
+      margin-top: 5px;
+    }
+  }
+}
+
+.main {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 700px;
+  .question {
+    font-weight: 900;
+    color: black;
+  }
+}
+
+.form-area {
+  text-align: center;
+  border: 2px solid #981a21;
+  border-radius: 5px;
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  ul {
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    margin-left: -11px;
+  }
+  .left {
+    display: inline-block;
+    width: 312px;
+    text-align: left;
+    p {
+      margin-bottom: 10px;
+    }
+  }
+  .right {
+    display: inline-block;
+    .join {
+      margin-bottom: 7px;
+      font-weight: 900;
+      color: black;
+    }
+  }
+  form {
+    text-align: left;
+    label {
+      display: none;
+    }
+    .input input {
+      border: solid 1px #981a21;
+      color: #787878;
+      font-size: 19px;
+      padding-left: 10px;
+      width: 300px;
+      background-color: #fafafa;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      margin-top: 5px;
+      border-radius: 4px;
+    }
+    .submit input {
+      font-size: 19px;
+      background-color: #981a21;
+      color: white;
+      border: solid 1px #981a21;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      border-radius: 4px;
+      margin-top: 5px;
+      width: 100%;
+    }
+  }
+}
+
+.log-out a {
+  position: absolute;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    width: 90%;
+  }
+
+  .header {
+    .sub-title {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .form-area {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .main {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .form-area {
+    form {
+      input {
+        width: 200px;
+      }
+    }
+  }
+}
