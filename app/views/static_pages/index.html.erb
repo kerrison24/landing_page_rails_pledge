@@ -28,6 +28,12 @@
   </ol>
 </div>
 
+<div class="notice">
+  <% if flash[:notice] %>
+    <p><%= flash[:notice] %></p>
+  <% end %>
+</div>
+
 <div class="form-area">
   <div class="left">
     <p>If one of your goals are to:</p>

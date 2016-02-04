@@ -6,9 +6,9 @@ class EmailsController < ApplicationController
   def create
     @email = Email.create(email_params)
     if @email.save
-      redirect_to root_url
+      redirect_to root_url, notice: "Thanks for signing up!"
     else
-      redirect_to root_url
+      redirect_to root_url, notice: "Email has already been submitted"
     end
   end
 

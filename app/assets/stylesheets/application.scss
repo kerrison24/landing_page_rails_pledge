@@ -137,6 +137,13 @@ p, li {
   position: absolute;
 }
 
+.notice p {
+  text-align: center;
+  margin-bottom: -40px;
+  margin-top: 40px;
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 1000px) {
   body {
     width: 90%;
