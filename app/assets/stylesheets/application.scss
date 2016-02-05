@@ -97,9 +97,13 @@ p, li {
   .right {
     display: inline-block;
     .join {
-      margin-bottom: 7px;
       font-weight: 900;
       color: black;
+      margin-bottom: 0;
+    }
+    .limit {
+      margin: 0;
+      font-size: 14px;
     }
   }
   form {
